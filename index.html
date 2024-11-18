@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheUltimateRPS</title>
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="position-relative" style="height: 100dvh;">
+  <div
+    class="bg-blur position-absolute top-50 start-50 d-none text-white translate-middle win-lose bg-opacity-50 z-3 p-5 w-100 h-100 d-flex align-items-center justify-content-center flex-column ">
+    <p class="win-lose-text text-center "></p>
+    <button class="bg-transparent d-none button-again">Tekrar Oyna</button>
+  </div>
+
+
+  <div class="container d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex justify-content-between w-100">
+      <div class="z-3">
+        <p class="fs-3 text-danger m-0">Oyuncu</p>
+        <p class="fs-4 text-center " id="player-score">0</p>
+      </div>
+      <div class="z-3">
+        <p class="fs-3 text-danger m-0">Beraberlik</p>
+        <p class="fs-4 text-center " id="beraberlik-score">0</p>
+      </div>
+      <div class="z-3">
+        <p class="fs-3 text-danger m-0">Bilgisayar</p>
+        <p class="fs-4 text-center " id="computer-score">0</p>
+      </div>
+    </div>
+    <div class="yoket">
+      <div>
+        <h1 class="text-center text-warning">Seçiminizi Yapın</h1>
+      </div>
+
+      <div class="d-flex gap-3 my-3 img-container align-items-center">
+
+        <label>
+          <input class="input d-none" value="tas" name="secim" type="radio">
+          <img src="./assets/tas.png" class="rounded-4 img" alt="tas">
+        </label>
+        <label>
+          <input class="input d-none" value="kagit" name="secim" type="radio">
+          <img src="./assets/kagit.png" class="rounded-4 img" alt="kagit">
+        </label>
+        <label>
+          <input class="input d-none" value="makas" name="secim" type="radio">
+          <img src="./assets/makas.png" class="rounded-4 img" alt="makas">
+        </label>
+      </div>
+    </div>
+
+
+    <div class="border border-1 w-100">
+
+    </div>
+
+    <div class="wrapper d-none mt-4 px-3">
+      <h2 class="mt-0 text-warning text-center">Oyunun Sonucu</h2>
+
+      <div>
+        <div class="d-flex gap-4 my-3 img-container align-items-center">
+
+          <img id="player" src="" class="rounded-4 img-res" alt="tas">
+
+          <img src="./assets/vs.png" style="width: 50px;" class="rounded-4" alt="vs">
+
+          <img id="computer" src="" class="rounded-4 img-res" alt="makas">
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

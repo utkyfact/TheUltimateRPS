@@ -1,0 +1,78 @@
+body {
+    background-color: #f0f0f0; /* Arka plan rengi */
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.wrapper {
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.img {
+    width: 150px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.button-again {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button-again:hover {
+    background-color: #007bff !important;
+    color: white !important;
+    animation: scaleUp 0.2s ease-in-out;
+}
+
+.img-container:hover .img{
+    filter: blur(5px);
+}
+.img:hover{
+    filter: blur(0px) !important;
+    transform: scale(1.1);
+}
+.img-res {
+    width: 150px; 
+}
+.win-lose{
+    font-size: 100px;
+}
+.bg-blur{
+    backdrop-filter: blur(20px);
+}
+
+@media (max-width: 500px){
+    .img {
+        width: 100px;
+    }
+    .img-res {
+        width: 100px; 
+    }
+    .win-lose{
+        font-size: 70px;
+    }
+    
+    
+}
